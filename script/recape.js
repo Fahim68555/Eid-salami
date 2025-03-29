@@ -34,15 +34,22 @@ document.getElementById('Cashout').addEventListener('click',function(event){
    const amount2 = document.getElementById('amount2').value;
    const convertedAmount = parseFloat(amount2);
    const addAmount = document.getElementById('men-amount').innerText;
+   const accountNumber=document.getElementById("acount-number").value
    const convertedAddAmount = parseInt(addAmount);
    if(convertedPin === 1234){
-    const sum = convertedAddAmount - convertedAmount;
-    document.getElementById('men-amount').innerText=sum;
+    if(accountNumber.length === 11 && accountNumber[0]===0 && accountNumber[1]===1){
+        const sum = convertedAddAmount - convertedAmount;
+        document.getElementById('men-amount').innerText=sum;
+    }
+    else{
+        alert("Invalid Account Number")
+    }
+    
     
     
    }
    else{
-    console.log('Invalid Pin ')
+    alert('Invalid Pin ')
    }
 })
    

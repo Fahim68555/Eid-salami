@@ -6,9 +6,10 @@ document.getElementById('add-money').addEventListener('click',function(event){
     const convertedAmount = getInputValueById2("men-amount");
     console.log(convertedAmount)
    if(pin === 1234){
-if(account.length === 11){
-    const sum = amount + convertedAmount;
+if(account.length === 11 && account[0]===0 && account[1]===1){
+    const sum = amount + convertedAmount ;
 document.getElementById("men-amount").innerText =sum;
+
 }
 else{
     alert('Invalid Mobile Number')
@@ -17,6 +18,7 @@ else{
    else{
     alert('Invalid Pin')
    }
+
 })
 
 
