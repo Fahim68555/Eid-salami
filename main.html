@@ -9,46 +9,65 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-slate-800" >
+<body class="bg-slate-800 w-full ">
     <header>
 
-        <section class="max-w-md min-h-screen mx-auto py-6 bg-white " >
-            <div class="mx-2"><h2 class=" mx-auto flex justify-center font-bold text-xl text-gray-600 italic border rounded-lg ">Program by Fahim Hasan</h2></div>
-            
+        <section class=" w-3/4 mx-auto py-6 bg-white ">
+            <div class="grid grid-cols-2 gap-66">
+                <div><img class="absolute w-15" src="./assets/png-clipart-eid-al-fitr-eid-mubarak-eid-al-adha-five-color-fantasy-light-chandelier-three-assorted-color-lanterns-illustration-color-splash-lantern-thumbnail-removebg-preview.png" alt=""> </div>
+            <div><img class="absolute w-15" src="./assets/png-clipart-eid-al-fitr-eid-mubarak-eid-al-adha-five-color-fantasy-light-chandelier-three-assorted-color-lanterns-illustration-color-splash-lantern-thumbnail-removebg-preview.png" alt=""> </div></div>
+
+<div class="rounded-lg text-xl italic pt-3 ">
+    <div>
+        <h2 class=" mx-auto flex justify-center font-bold  text-gray-500">
+            Program by Fahim Hasan</h2>
+    </div>
+    <div>
+        <div class="mx-auto ">
+            <div class="flex justify-center ">
+                
+                <img class=" size-30 w-full" src="./assets/abc.png" alt="">
+          
+            </div>
+        </div>
+    </div></div>
+
             <div class="flex justify-between m-6 ">
                 <div class="flex">
-                    
+
                     <div>
-                        <img class="w-14 my-auto  " src="./assets/pngtree-colorful-eid-mubarak-bangla-typography-png-image_4551295-removebg-preview.png" alt="">
+                        <img class="w-18 my-auto  "
+                            src="./assets/pngtree-colorful-eid-mubarak-bangla-typography-png-image_4551295-removebg-preview.png"
+                            alt="">
                     </div>
                     <div>
-                        <h1 class="font-extrabold  text-xl mt-2"> ৳ <span  id="men-amount">4500</span></h1>
+                        <h1 class="font-extrabold  text-xl mt-4"> ৳ <span id="men-amount">4500</span></h1>
                         <p class="text-sm">Available Balance</p>
                     </div>
                 </div>
                 <div class="flex">
                     <div>
-                    <button class="btn  rounded-md text- mt-3 ">Log-Out</button></div>
-                    
+                        <button class="btn  rounded-md text- mt-3 ">Log-Out</button>
+                        
+                    </div>
+
                 </div>
             </div>
+            
             <section>
-                <div class="flex ">
-                    <img class="w-14  " src="./assets/Screenshot_2025-03-29_212644-removebg-preview.png" alt="">
-                <h1 class="text-2xl font-extrabold mt-5 italic"> ঈদ সালামি</h1>
-                <img class="w-14 ml-2  " src="./assets/Screenshot_2025-03-29_212644-removebg-preview.png" alt="">
-            </div>
-                <p class="text-xl ml-6 mr-6 mt-3 text-[#1b1b1b91]">নে ফকিন্নি তোর যত টাকা <span class="font-bold">ঈদ সালামি</span> লাগে  <span class="font-bold text-black  italic">Send Money</span>  করে নে।
+
+                <p class="ml-6 mr-6 mt-3 text-[#1b1b1b91] text-center">নে ফকিন্নি তোর যত টাকা <span class="font-bold">ঈদ
+                        সালামি</span> লাগে <span class="font-bold text-black  italic">Send Money</span> করে নে।
                 </p>
-                    
-                <div class="grid-cols-2 grid gap-4 mx-6 mt-6  " >
-                    <div class="w-32 h-24 rounded-xl bg-[#08080811] p-4 "id="btn-1">
-                        
+
+                <div class="grid-cols-2 grid gap-4 mx-auto mt-6  w-9/12 sm:grid-cols-3 lg:grid-cols-6 ">
+                    <div class="w-32 h-24 rounded-xl bg-[#08080811] p-4 " id="btn-1">
+
                         <img class="w-8 mx-auto " src="./assets/wallet1.png" alt="">
                         <p class="text-center">Add Money</p>
                     </div>
                     <div class="w-32 h-24 rounded-xl bg-[#08080811] text-center p-4 " id="btn-2">
-                        <img class="w-8 mx-auto " src="./assets/send1.png" alt="">
+                        <img class="w-8 mx-auto " src="./assets/" alt="">
                         <p class="">Send Money</p>
                     </div>
                     <div class="w-32 h-24 rounded-xl bg-[#08080811] tex-center p-4">
@@ -69,7 +88,7 @@
                     </div>
                 </div>
             </section>
-            <section class="mx-auto w-4/5 " id="sendMoney-section" >
+            <section class="mx-auto w-4/5 " id="sendMoney-section">
                 <p class="py-6 font-semibold text-2xl">Add Money
 
                 </p>
@@ -77,73 +96,68 @@
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="text-xl font-medium ">Select A Bank</label>
-                            <select class="select rounded-2xl mt-3">
+                            <select class="select rounded-2xl mt-3 w-full ">
                                 <option disabled selected>Select back</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">Nagad</option>
                                 <option value="DBBL">DBBL</option>
                             </select>
-                            
-                                <fieldset class="fieldset">
-                                    <label class="text-xl font-medium mt-4">Bank Account Number</label>
-                                    <input type="number" value="01928373267" id="acount-number"
-                                        class="input text-xs w-80 rounded-3xl mt-3 "
-                                        placeholder="Enter 11 digit account number" required />
-                                    <label class="text-xl font-medium mt-4">Amount to Add</label>
-                                    <input type="number" value="" id="amount"
-                                        class="input text-xs w-80 rounded-3xl mt-3 "
-                                        placeholder="Add Amount to withdraw" required />
+
+                            <fieldset class="fieldset ">
+                                <label class="text-xl font-medium mt-4">Bank Account Number</label>
+                                <input type="number" value="" id="acount-number"
+                                    class="input text-xs  rounded-3xl mt-3 w-full "
+                                    placeholder="Enter 11 digit account number" required />
+                                <label class="text-xl font-medium mt-4 ">Amount to Add</label>
+                                <input type="number" value="" id="amount"
+                                    class="input text-xs  rounded-3xl mt-3 w-full " placeholder="Add Amount to withdraw"
+                                    required />
 
 
-                                    <label class="text-xl font-medium mt-3">Pin Number</label>
-                                    <input type="text" value="1234" id="pin" class="input rounded-3xl mt-3"
-                                        placeholder="Enter 4 digit pin number" required />
+                                <label class="text-xl font-medium mt-3">Pin Number</label>
+                                <input type="text" value="1234" id="pin" class="input rounded-3xl mt-3 w-full"
+                                    placeholder="Enter 4 digit pin number" required />
 
-                                    <button id="add-money"
-                                        class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-3xl w-76 h-14 mx-auto text-xl font-semibold">Add
-                                        Money</button>
-                                </fieldset>
+                                <button id="add-money"
+                                    class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-3xl w-full h-14 mx-auto text-xl font-semibold ">Add
+                                    Money</button>
+                            </fieldset>
                     </div>
                 </div>
                 </div>
                 </div>
                 <!-- section-2 -->
 
-<section id="section-2" class="card-body mx-auto card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
-    <fieldset class="fieldset">
-        <label class="text-xl font-medium mt-4">Your Number</label>
-        <input type="number" value="" id="acount-number"
-            class="input text-xs w-80 rounded-3xl mt-3 "
-            placeholder="Enter 11 digit account number" required />
-        <label class="text-xl font-medium mt-4">Amount</label>
-        <input type="number" value="" id="amount2"
-            class="input text-xs w-80 rounded-3xl mt-3 "
-            placeholder="Add Amount to withdraw" required />
+                <section id="section-2"
+                    class="card-body mx-auto card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-5">
+                    <fieldset class="fieldset">
+                        <label class="text-xl font-medium mt-4">Your Number</label>
+                        <input type="number" value="" id="acount-number" class="input text-xs  rounded-3xl mt-3 "
+                            placeholder="Enter 11 digit account number" required />
+                        <label class="text-xl font-medium mt-4">Amount</label>
+                        <input type="number" value="" id="amount2" class="input text-xs  rounded-3xl mt-3  "
+                            placeholder="Add Amount to withdraw" required />
 
 
-        <label class="text-xl font-medium mt-3">Pin Number</label>
-        <input type="text" value="1234" id="pin" class="input rounded-3xl mt-3"
-            placeholder="Enter 4 digit pin number" required />
+                        <label class="text-xl font-medium mt-3">Pin Number</label>
+                        <input type="text" value="1234" id="pin" class="input rounded-3xl mt-3"
+                            placeholder="Enter 4 digit pin number" required />
 
-        <button id="Cashout"
-            class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-3xl w-76 h-14 mx-auto text-xl font-semibold">Send Money</button>
-    </fieldset>
-</section>
-<section id="section-3">
-    <h1 class="text-3xl font-bold text-red-400 text-center p-4">Transection History</h1>
-</section>
+                        <button id="Cashout"
+                            class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-3xl w-76 h-14 mx-auto text-xl font-semibold w-full">Send
+                            Money</button>
+                    </fieldset>
 
-            </section>
 
-            
-            
+
+
     </header>
-    <!-- <script src="script/recape.js"></script> -->
-    <!-- <script src="script/addMoney.js"></script>
-     <script src="script/cashout.js"></script>
-     <script src="script/main.js"></script> -->
-      <script src="utilities/utilites.js"></script>
-       <script src="script.js"></script>
+    <script src="script/recape.js"></script>
+    <script src="script/addMoney.js"></script>
+    <script src="script/cashout.js"></script>
+    <script src="script/main.js"></script>
+    <script src="utilities/utilites.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
