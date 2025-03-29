@@ -20,9 +20,7 @@ else{
 })
 
 
-function changeRGBColor() {
-document.body.style.backgroundColor = getRandomRGB();
-}
+
 
 document.getElementById('btn-1').addEventListener('click', function(){
     handleToggle('section-1','block')
@@ -35,7 +33,8 @@ document.getElementById('btn-1').addEventListener('click', function(){
 document.getElementById('btn-2').addEventListener('click',function(){
     handleToggle('section-1','none');
     handleToggle('section-3','none');
-    handleToggle('section-2','block')
+    handleToggle('section-2','block');
+   
 })
 
 function handleToggle(id,status){
