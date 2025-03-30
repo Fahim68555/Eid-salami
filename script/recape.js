@@ -15,6 +15,8 @@ document.getElementById('add-money').addEventListener('click', function (event) 
             if(AAccountNumber[0] === '0' && AAccountNumber[1] === '1' ){
                 const sum = convertedAddAmount + convertedAmount;
                 document.getElementById('men-amount').innerText = sum;
+                document.getElementById('section-3').style.display = 'block';
+                document.getElementById('section-1').style.display = 'none';
             }
             else{
                 alert("Invalid AccountNumber (Please start with 01)")
@@ -33,6 +35,8 @@ document.getElementById('add-money').addEventListener('click', function (event) 
 })
 document.getElementById('section-2').style.display = 'none';
 document.getElementById('section-1').style.display = 'block';
+document.getElementById('section-3').style.display = 'none';
+document.getElementById('section-4').style.display = 'none';
 
 
 document.getElementById('btn-1').addEventListener('click', function () {
@@ -63,6 +67,9 @@ document.getElementById('Cashout').addEventListener('click', function (event) {
             if(AAccountNumber2[0] === '0' && AAccountNumber2[1] === '1' ){
                 const sum3 = convertedAddAmount - convertedAmount;
                     document.getElementById('men-amount').innerText = sum3
+
+                    document.getElementById('section-4').style.display = 'block';
+                document.getElementById('section-2').style.display = 'none';
                 
                 }
             else{
@@ -84,3 +91,13 @@ document.getElementById('Cashout').addEventListener('click', function (event) {
 
 })
 
+document.getElementById("Close-btn").addEventListener("click",function(){
+    document.getElementById('section-3').style.display = 'none';
+                document.getElementById('section-1').style.display = 'block';
+                document.getElementById('section-2').style.display = 'block';
+})
+document.getElementById("Close-btn-2").addEventListener("click",function(){
+    document.getElementById('section-3').style.display = 'none';
+                document.getElementById('section-1').style.display = 'block';
+                document.getElementById('section-3').style.display = 'block';
+})
